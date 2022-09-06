@@ -18,7 +18,7 @@ class Calculator extends React.Component {
       <div className="calculator-body">
         <CalculatorScreen value={this.calculatorModule.printScreen()} />
         <div className="actions">
-          <CalculatorBtn action={() => { }} name="ac" showName="AC" />
+          <CalculatorBtn action={() => { console.log('ac'); }} name="ac" showName="AC" />
           <CalculatorBtn action={() => { }} name="sign" showName="+/-" />
           <CalculatorBtn action={() => { }} name="percent" showName="%" />
           <CalculatorBtn action={() => { }} name="number-1" showName="1" />

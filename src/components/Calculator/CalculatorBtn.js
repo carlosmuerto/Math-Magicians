@@ -4,17 +4,19 @@ import React from 'react';
 // eslint-disable-next-line react/prefer-stateless-function
 class CalculatorBtn extends React.Component {
   render() {
-    const { showName, name } = this.props;
+    const { action, showName, name } = this.props;
     return (
       <div className={`calculator-btn action-${name}`}>
-        <p className="calculator-showName">{showName ?? name}</p>
+        <button type="button" className="calculator-showName" onClick={action}>
+          {showName ?? name}
+        </button>
       </div>
     );
   }
 }
 
 CalculatorBtn.propTypes = {
-  // action: PropTypes.func.isRequired,
+  action: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   showName: PropTypes.string,
 };

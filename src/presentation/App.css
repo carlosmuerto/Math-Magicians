@@ -4,17 +4,3 @@
   box-sizing: border-box;
   justify-content: stretch;
 }
-
-/*
-.app header.app-header {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid red;
-}
-
-.app main.app-main {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid blue;
-}
-*/
