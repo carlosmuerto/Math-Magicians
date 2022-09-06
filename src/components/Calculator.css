@@ -1,3 +1,154 @@
+:root {
+  --calc-action-color: #ff8e47;
+  --number-action-color: #ddd;
+}
+
 .calculator-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.calculator-body .actions {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.calculator-screen {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #aaa;
+  border: 1px solid #555;
+  margin: 1px;
+}
+
+.calculator-screen .calculator-value {
+  margin: 1rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.calculator-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #555;
+  margin: 1px;
+  font-weight: bold;
+}
+
+.calculator-btn.action-ac {
+  background-color: var(--number-action-color);
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.calculator-btn.action-sign {
+  background-color: var(--number-action-color);
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.calculator-btn.action-percent {
+  background-color: var(--number-action-color);
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.calculator-btn.action-number-1 {
+  background-color: var(--number-action-color);
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.calculator-btn.action-number-2 {
+  background-color: var(--number-action-color);
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.calculator-btn.action-number-3 {
+  background-color: var(--number-action-color);
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.calculator-btn.action-number-4 {
+  background-color: var(--number-action-color);
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.calculator-btn.action-number-5 {
+  background-color: var(--number-action-color);
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.calculator-btn.action-number-6 {
+  background-color: var(--number-action-color);
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.calculator-btn.action-number-7 {
+  background-color: var(--number-action-color);
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.calculator-btn.action-number-8 {
+  background-color: var(--number-action-color);
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.calculator-btn.action-number-9 {
+  background-color: var(--number-action-color);
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.calculator-btn.action-number-0 {
+  background-color: var(--number-action-color);
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 1;
+}
+
+.calculator-btn.action-decimal {
+  background-color: var(--number-action-color);
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.calculator-btn.action-div {
+  background-color: var(--calc-action-color);
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.calculator-btn.action-times {
+  background-color: var(--calc-action-color);
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.calculator-btn.action-minus {
+  background-color: var(--calc-action-color);
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.calculator-btn.action-plus {
+  background-color: var(--calc-action-color);
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.calculator-btn.action-total {
+  background-color: var(--calc-action-color);
+  grid-column: 4 / span 1;
+  grid-row: 5 / span 1;
 }
