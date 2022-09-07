@@ -17,7 +17,7 @@
 
 .calculator-screen {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   background-color: #aaa;
   border: 1px solid #555;
