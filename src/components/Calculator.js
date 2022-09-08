@@ -5,7 +5,8 @@ import CalculatorScreen from './Calculator/ClaculatorScreen';
 import CalculatorBtn from './Calculator/CalculatorBtn';
 import calculate from '../modules/logic/calculate';
 
-function Calculator() {
+// eslint-disable-next-line react/function-component-definition
+const Calculator = () => {
   const [state, setState] = useState({});
 
   return (
@@ -110,6 +111,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;
