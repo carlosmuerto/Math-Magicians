@@ -3,9 +3,8 @@ import './Calculator.css';
 import React, { useState } from 'react';
 import CalculatorScreen from './Calculator/ClaculatorScreen';
 import CalculatorBtn from './Calculator/CalculatorBtn';
-import calculate from '../modules/logic/calculate';
+import calculate from '../../modules/logic/calculate';
 
-// eslint-disable-next-line react/function-component-definition
 const Calculator = () => {
   const [state, setState] = useState({});
 
