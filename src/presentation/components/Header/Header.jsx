@@ -8,7 +8,10 @@ const Header = ({ links }) => (
     <nav>
       {links.map((link) => (
         <div key={`NavLinkTo${link.text}`}>
-          <NavLink to={link.path} className="nav-link" activeClassName="active">
+          <NavLink
+            to={link.path}
+            className={`nav-link ${({ isActive }) => (isActive ? 'active' : '')}`}
+          >
             {link.text}
           </NavLink>
         </div>
