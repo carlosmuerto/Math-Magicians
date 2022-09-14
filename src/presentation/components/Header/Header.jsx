@@ -13,13 +13,7 @@ const Header = ({ links }) => (
               data-testid="navlink"
               to={link.path}
               className={
-                `nav-link ${({
-                  isActive,
-                }) => (
-                  isActive
-                    ? 'active'
-                    : ''
-                )}`
+                `nav-link ${({ isActive }) => (isActive ? 'active' : '')}`
               }
             >
               {link.text}
