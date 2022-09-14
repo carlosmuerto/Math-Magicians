@@ -6,21 +6,19 @@ const Header = ({ links }) => (
   <header className="app-header">
     <h1 data-testid="title">Math Magicians</h1>
     <nav data-testid="nav">
-      <div key={`NavLinkTo${links.text}`}>
-        {links.map((link) => (
-          <div key={`NavLinkTo${link.text}`}>
-            <NavLink
-              data-testid="navlink"
-              to={link.path}
-              className={
-                `nav-link ${({ isActive }) => (isActive ? 'active' : '')}`
-              }
-            >
-              {link.text}
-            </NavLink>
-          </div>
-        ))}
-      </div>
+      {links.map((link) => (
+        <div key={`NavLinkTo${link.text}`}>
+          <NavLink
+            data-testid="navlink"
+            to={link.path}
+            className={
+              `nav-link ${({ isActive }) => (isActive ? 'active' : '')}`
+            }
+          >
+            {link.text}
+          </NavLink>
+        </div>
+      ))}
     </nav>
   </header>
 );
