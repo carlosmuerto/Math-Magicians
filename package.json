@@ -2,7 +2,6 @@
 	"name": "math-magicians",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://carlosmuerto.github.io/Math-Magicians",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
@@ -52,6 +51,7 @@
 		"eslint-plugin-jsx-a11y": "^6.6.1",
 		"eslint-plugin-react": "^7.31.7",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"netlify-cli": "^11.7.1",
 		"stylelint": "^14.11.0",
 		"stylelint-config-standard": "^28.0.0",
 		"stylelint-csstree-validator": "^2.0.0",

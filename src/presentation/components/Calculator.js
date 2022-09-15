@@ -7,10 +7,10 @@ import calculate from '../../modules/logic/calculate';
 
 const Calculator = () => {
   const [state, setState] = useState({});
-
+  const { total, operation, next } = state;
   return (
     <div className="calculator-body">
-      <CalculatorScreen value={state.next ?? state.total ?? '0'} />
+      <CalculatorScreen value={((total ?? '') + (operation ?? '') + (next ?? '')) ?? ' '} />
       <div className="actions">
         <CalculatorBtn
           action={() => { setState(calculate(state, 'AC')); }}
